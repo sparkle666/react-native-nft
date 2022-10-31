@@ -5,7 +5,8 @@ import {COLORS, NFTData} from "../constants"
 const Home = () => {
     console.log("Hello world")
     return (
-        <SafeAreaView style={{flex: 1}}>
+        <SafeAreaView style={{flex: 1, justifyContent: 'center',
+        backgroundColor: '#ECF0F1'}}>
             <FocusedStatusBar background = {COLORS.primary} />
             <View style={{flex: 1}}>
                 <View style = {{zIndex: 0}}> 
