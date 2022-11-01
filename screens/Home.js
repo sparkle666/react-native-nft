@@ -9,9 +9,9 @@ const Home = () => {
         backgroundColor: '#ECF0F1'}}>
             <FocusedStatusBar background = {COLORS.primary} />
             <View style={{flex: 1}}>
-                <View style = {{zIndex: 0}}> 
+                <View style = {{zIndex: 0, color: "white"}}> 
                     <FlatList data = {NFTData} 
-                    renderItem = {({item})=> <Text> {item.name}</Text>} 
+                    renderItem = {({item})=> <NFTCard data = {item} />} 
                     keyExtractor = {(item)=> item.id}
                     showsVerticalScrollIndicator = {false}
                     ListHeaderComponent = {<HomeHeader />} 
