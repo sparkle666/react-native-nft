@@ -1,6 +1,6 @@
 import { View, Text, Image} from 'react-native'
 import React from 'react'
-import { SIZES, assets, SHADOWS, COLORS } from '../constants'
+import { SIZES, assets, SHADOWS, COLORS, FONTS } from '../constants'
 
 export const EthPrice = () => {
   return (
@@ -55,8 +55,37 @@ export const NFTTitle = () => {
 
   export const EndDate = () => {
     return (
-      <View>
-        <Text>EndDate</Text>
+        <View
+        style={{
+          paddingHorizontal: SIZES.font,
+          paddingVertical: SIZES.base,
+          backgroundColor: COLORS.white,
+          borderRadius: SIZES.font,
+          justifyContent: "center",
+          alignItems: "center",
+          ...SHADOWS.light,
+          elevation: 1,
+          maxWidth: "50%",
+        }}
+      >
+        <Text
+          style={{
+            fontFamily: FONTS.regular,
+            fontSize: SIZES.small,
+            color: COLORS.primary,
+          }}
+        >
+          Ending in
+        </Text>
+        <Text
+          style={{
+            fontFamily: FONTS.semiBold,
+            fontSize: SIZES.medium,
+            color: COLORS.primary,
+          }}
+        >
+          12h 30m
+        </Text>
       </View>
     )
   }
