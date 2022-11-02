@@ -3,7 +3,7 @@ import {FocusedStatusBar, HomeHeader, NFTCard} from "../components"
 import {COLORS, NFTData} from "../constants"
 
 const Home = () => {
-    console.log("Hello world")
+    
     return (
         <SafeAreaView style={{flex: 1, justifyContent: 'center',
         backgroundColor: '#ECF0F1'}}>
