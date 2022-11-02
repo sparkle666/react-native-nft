@@ -2,10 +2,25 @@ import { View, Text, Image} from 'react-native'
 import React from 'react'
 import { SIZES, assets, SHADOWS, COLORS, FONTS } from '../constants'
 
-export const EthPrice = () => {
+export const EthPrice = ({price}) => {
   return (
-    <View>
-      <Text>EthPrice</Text>
+    <View style = {{
+        flexDirection: "row",
+        alignItems: "center"
+    }}>
+        <Image style = {{
+            height: 20,
+            width: 20,
+            marginRight: 2
+        }} 
+        source = {assets.eth}
+        resizeMode = "contain"
+        />
+      <Text style = {{
+         fontFamily: FONTS.medium,
+         fontSize: SIZES.font,
+         color: COLORS.primary,
+      }}>{price}</Text>
     </View>
   )
 }
