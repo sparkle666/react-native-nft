@@ -25,6 +25,11 @@ const NFTCard = ({data}) => {
       </View>
       <CircleButton imgUrl = {assets.heart} top = {10} right = {10} />
       <SubInfo />
+      <View style = {{padding: SIZES.font, width: '100%'}}>
+        <NFTTitle title = {data.name} subtitle = {data.creator} titleSize = {SIZES.large} 
+          subTitleSize = {SIZES.small}
+        />
+      </View>
     </View>
   )
 }

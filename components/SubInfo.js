@@ -10,10 +10,21 @@ export const EthPrice = () => {
   )
 }
 
-export const NFTTitle = () => {
+export const NFTTitle = ({title, subtitle, titleSize, subTitleSize}) => {
     return (
       <View>
-        <Text>NFTTitle</Text>
+        <Text style={{
+            fontFamily: FONTS.semiBold, 
+            fontSize: titleSize, 
+            color: COLORS.primary}}>
+            {title}
+        </Text>
+        <Text style={{
+            fontFamily: FONTS.regular, 
+            fontSize: subTitleSize, 
+            color: COLORS.primary}}>
+            {subtitle}
+        </Text>
       </View>
     )
   }
