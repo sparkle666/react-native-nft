@@ -5,6 +5,7 @@ import React from "react";
 
 const DetailsHeader = ({data, navigation}) => (
     <View style = {{width: '100%', height: 373}} >
+        {console.log(navigation)}
         <Image source={data.image} resizeMode = 'cover' 
             style = {{width: "100%", height: '100%'}} 
         />
